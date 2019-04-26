@@ -1,5 +1,6 @@
 language: python
 script:
+  - virtualenv venv
+  - source venv/bin/activate
   - pipenv install django
-  - virtualenv ENV
   - python manage.py test
