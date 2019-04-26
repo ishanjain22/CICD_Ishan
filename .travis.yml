@@ -1,5 +1,5 @@
 language: python
 script:
   - pipenv install django
-  - pipenv shell
+  - virtualenv ENV
   - python manage.py test
