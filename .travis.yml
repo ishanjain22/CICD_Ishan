@@ -1,3 +1,5 @@
 language: python
 script:
+  - pipenv install django
+  - pipenv shell
   - python manage.py test
